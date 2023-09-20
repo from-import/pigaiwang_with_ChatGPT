@@ -74,8 +74,7 @@ def write_pg(account,password,number):
     sleep(3)
     point="/html/body/div[4]/div[3]/div[5]/div[2]/div[1]/div[2]/div[1]/div/div[1]/div/div/div/span[1]"
     point=driver.find_element("xpath",point)
-    print(point.text)
-    return point.text
+    print("这篇作文的得分为:%s"%point.text)
 
 
 
